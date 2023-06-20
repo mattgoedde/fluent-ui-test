@@ -9,6 +9,16 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.18" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.18" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI" Version="2.3.6" />
   </ItemGroup>
+
+  <PropertyGroup>
+    <PublishFluentIconAssets>true</PublishFluentIconAssets>
+    <FluentIconSizes>10,12,16,20,24,28,32,48</FluentIconSizes>
+    <FluentIconVariants>Filled,Regular</FluentIconVariants>
+    <PublishFluentEmojiAssets>true</PublishFluentEmojiAssets>
+    <FluentEmojiGroups>Activities,Animals_Nature,Flags,Food_Drink,Objects,People_Body,Smileys_Emotion,Symbols,Travel_Places</FluentEmojiGroups>
+    <FluentEmojiStyles>Color,Flat,HighContrast</FluentEmojiStyles>
+  </PropertyGroup>
 
 </Project>
