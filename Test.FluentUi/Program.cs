@@ -8,7 +8,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddFluentUIComponents(options =>
 {
-    options.HostingModel = {see remark below};
+    options.HostingModel = BlazorHostingModel.WebAssembly;
     options.IconConfiguration = ConfigurationGenerator.GetIconConfiguration();
     options.EmojiConfiguration = ConfigurationGenerator.GetEmojiConfiguration();
 });
