@@ -1,9 +1,17 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.Fast.Components.FluentUI;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+
+builder.Services.AddFluentUIComponents(options =>
+{
+    options.HostingModel = BlazorHostingModel.Server;
+    options.IconConfiguration = ConfigurationGenerator.GetIconConfiguration();
+    options.EmojiConfiguration = ConfigurationGenerator.GetEmojiConfiguration();
+});
 
 var app = builder.Build();
 
